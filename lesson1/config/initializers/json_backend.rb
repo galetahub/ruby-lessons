@@ -1,0 +1,1 @@
+#ActiveSupport::JSON.engine = :json_gem
