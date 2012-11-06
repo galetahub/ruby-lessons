@@ -1,10 +1,15 @@
-= Lesson #0
+Lesson #0
+============
 
-== Install
+Rack simple server
+
+Install
+============
 
   bundle install
 
-== Start server
+Start server
+============
 
   bundle exec rackup -s thin
 
