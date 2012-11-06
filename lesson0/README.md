@@ -1,17 +1,18 @@
-Lesson #0
-============
+# Lesson #0
+
 
 Rack simple server
 
-Install
-============
+## Install
 
+``` shell
   bundle install
+```
 
-Start server
-============
+## Start server
 
+``` shell
   bundle exec rackup -s thin
-
+```
 
 Copyright (c) 2012 Fodojo, released under the MIT license
