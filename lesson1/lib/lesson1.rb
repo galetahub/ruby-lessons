@@ -6,10 +6,10 @@ module Lesson1
   # Load configuration
   #
   def self.config
-    @config ||= Config.new(root_path.join('config', 'rfid.yml'))
+    @config ||= Config.new(root_path.join('config', 'application.yml'))
   end
   
-  # Rfid.root_path.join('..')
+  # Lesson1.root_path.join('..')
   #
   def self.root_path
     @root_path ||= Pathname.new( File.dirname(File.expand_path('../', __FILE__)) )
