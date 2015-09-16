@@ -3,7 +3,7 @@ require 'erubis'
 require "rack/contrib"
 
 module Lesson1
-  class Application < Sinatra::Application
+  class Application < ::Sinatra::Application
     # Configuration
     set :public_folder, lambda { Lesson1.root_path.join('public').to_s }
     set :views, lambda { Lesson1.root_path.join('views').to_s }
