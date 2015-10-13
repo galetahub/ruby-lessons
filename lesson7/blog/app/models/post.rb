@@ -15,9 +15,12 @@
 #
 #  index_posts_on_tag_ids  (tag_ids)
 #
-
 class Post < ActiveRecord::Base
+  include CustomFields
+
   validates :title, presence: true
+
+  custom_fields :bgcolor, :font_size, :theme
 
   def to_param
     "#{slug}-#{id}"
