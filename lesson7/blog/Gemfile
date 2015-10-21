@@ -18,8 +18,15 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Caching
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
+
+# API
+gem 'grape', '~> 0.13.0'
+gem 'grape_logging', '~> 1.1', '>= 1.1.2'
+gem 'grape-swagger', '~> 0.10.2'
+gem 'warden', '~> 1.2', '>= 1.2.3'
 
 group :development, :test do
   gem 'byebug'
@@ -29,3 +36,6 @@ group :development, :test do
   gem 'annotate', '~> 2.6.10'
 end
 
+group :development do
+  gem 'thin'
+end
