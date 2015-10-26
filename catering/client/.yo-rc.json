@@ -1,0 +1,12 @@
+{
+  "generator-backbone": {
+    "appPath": "app",
+    "appName": "Client",
+    "coffee": true,
+    "testFramework": "mocha",
+    "templateFramework": "handlebars",
+    "sassBootstrap": true,
+    "includeRequireJS": true
+  },
+  "generator-mocha": {}
+}
