@@ -11,7 +11,12 @@ module API
           Post.order(id: :desc).all
         end
 
-        desc "Create new post"
+        desc "Create new post", headers: {
+          "X-Auth-Token" => {
+            description: "User token",
+            required: true
+          }
+        }
         params do
           group :post, type: Hash do
             requires :title, :type => String, :desc => "Title"
